@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
+import "solmate/auth/Owned.sol";
+
 contract TicketManager {
     // Store the price
     uint256 price;
