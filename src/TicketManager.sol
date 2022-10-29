@@ -12,6 +12,11 @@ contract TicketManager {
         price = _price;
     }
 
+    // Setter method
+    function setPrice(uint256 newPrice) public {
+        price = newPrice;
+    }
+
     // Anyone can send money and the function has to be accessible by everyone
     function buyTicket() public payable {
         // The msg object is publicly accessible in order to retrieve information about the caller 
